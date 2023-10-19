@@ -39,7 +39,7 @@
     align-items: center;
     gap: 1.8rem;
     transition: all 1s ease;
-    height: fit-content;
+    min-height: 90vh;
 }
 
 .headerItem {
@@ -130,7 +130,7 @@
         width: 100%;
         left: 0;
         top: 4.4rem;
-        height: fit-content;
+        min-height: 90vh;
         padding: 2rem 2rem;
     }
     
