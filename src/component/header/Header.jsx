@@ -3,6 +3,7 @@ import "./style.css"
 import { FaBars } from "react-icons/fa6"
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { IoClose } from "react-icons/io5"
+import {useNavigate} from "react-router-dom"
 
 const Header = () => {
     const [show, setShow] = useState(true);
@@ -10,13 +11,14 @@ const Header = () => {
     const toggleBar = () => {
         setShow(!show);
     }
+    const navigate=useNavigate();
 
     return (
         <div className="headerContainer">
             <div className="headerItems">
-                <div className="headerLogo">LOGO</div>
+                <div className="headerLogo" onClick={()=>{navigate("/")}}>LOGO</div>
                 <div className={`headerAllItem ${show ? "headerMobile " : ""}`}>
-                    <div className="headerItem">Home</div>
+                    <div className="headerItem" onClick={()=>{navigate("/")}}>Home</div>
                     <div className="headerItem headerDrop" onClick={() => { setPopUp(!popUp) }} onMouseOver={() => { setPopUp(true) }} onMouseOut={() => { setPopUp(false) }}>All Products<RiArrowDropDownLine className="headerDropDown" /></div>
                     {
                         popUp &&
@@ -70,9 +72,9 @@ const Header = () => {
                             </ul>
                         </div>
                     }
-                    <div className="headerItem">About Us</div>
-                    <div className="headerItem">Line Card</div>
-                    <div className="headerItem">Contact Us</div>
+                    <div className="headerItem"onClick={()=>{navigate("/about")}} >About Us</div>
+                    <div className="headerItem"onClick={()=>{navigate("/lineCard")}} >Line Card</div>
+                    <div className="headerItem"onClick={()=>{navigate("/contact")}} >Contact Us</div>
                     <div className="headerItem"><span className="headerCall">CALL NOW:</span> 9876543210</div>
                 </div>
             </div>

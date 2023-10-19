@@ -2,13 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; 
     font-family: 'Rubik', sans-serif;
+}
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .headerContainer {
     width: 100vw;
-    height: 10vh;
 }
 
 .headerItems {
@@ -20,7 +23,6 @@
     color: white;
     padding: 1rem 1.3rem;
     font-size: 1.1rem;
-    /* height: 10vh; */
 }
 
 .headerLogo {

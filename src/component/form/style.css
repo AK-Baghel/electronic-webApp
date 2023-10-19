@@ -1,0 +1,58 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 40vw;
+}
+.formSection1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.formInput{
+    outline:none;
+    border:1.5px solid rgb(212, 212, 212);
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: rgba(219, 219, 219, 0.199);
+}
+.formInput:focus{
+    border-color: rgb(51, 214, 255);
+}
+.formName{
+    min-width: 19vw;
+}
+.formTextarea{
+    max-width: 40vw;
+}
+.formButtonSection{
+    text-align: right;
+}
+.formButton{
+    color: white;
+    background-color: #125CAC;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.1rem;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.formButton:hover{
+    background-color: #417CBC;
+    
+}
+@media (max-width:760px){
+    .formSection1{
+        flex-direction: column;
+    }
+}
+@media (max-width:630px){
+    .formContainer {
+        width: 70vw;
+    }
+    .formTextarea {
+        max-width: 70vw;
+    }
+}
