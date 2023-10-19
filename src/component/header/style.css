@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.headerContainer {
+    width: 100vw;
+    height: 10vh;
+}
+
+.headerItems {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: #371C9B;
+    color: white;
+    padding: 1rem 1.3rem;
+    font-size: 1.1rem;
+    /* height: 10vh; */
+}
+
+.headerLogo {
+    color: yellow;
+    padding: 0.5rem 2.5rem;
+    text-align: center;
+    width: fit-content;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.headerAllItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.8rem;
+    transition: all 1s ease;
+    height: fit-content;
+}
+
+.headerItem {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* text-align: center; */
+}
+
+.headerItem:hover {
+    color: yellow;
+}
+
+.headerCall {
+    color: greenyellow;
+}
+
+.headerBar {
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.headerCross {
+    font-size: 3rem;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.headerDropDown {
+    font-size: 2rem;
+}
+
+.headerDrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerPopUpBox{
+    position: absolute;
+    top:3rem;
+    color: rgb(255, 255, 255);
+    /* background-color: yellow; */
+    padding-top: 1.5rem;
+    width: 100vw;
+    left: 0rem;
+    animation: myAnim 0.5s ease 0s 1 normal forwards;
+}
+.headerPopUpBoxItems{
+    background-color: blueviolet;
+    padding: 1rem 1rem;
+    overflow: hidden;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.headerPopUpBoxItem{
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.9rem;
+    margin-inline: 10px;
+    margin-block: 10px;
+}
+
+
+
+
+
+@media (max-width:931px) {
+    .headerItems {
+        flex-direction: column;
+    }
+    
+    .headerAllItem {
+        /* height: 85vh; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        position: absolute;
+        background-color: #726cc5d2;
+        color: rgb(255, 255, 255);
+        width: 100%;
+        left: 0;
+        top: 4.4rem;
+        height: fit-content;
+        padding: 2rem 2rem;
+    }
+    
+    .headerMobile {
+        transform: translateX(-60rem);
+        transition: all 1s ease;
+    }
+    
+    .headerItem {
+        text-align: left;
+    }
+    
+    .headerBar {
+        display: block;
+    }
+    .headerCall{
+        color: rgb(238, 255, 4);
+    }
+    .headerPopUpBox{
+        position:static;
+        color: rgb(255, 255, 255);
+        /* background-color: yellow; */
+        padding: 0rem;
+        margin-right: 5rem;
+        margin: -1rem 5rem -1rem 0rem;
+        width: 80vw;
+        animation:none;
+    }
+    .headerPopUpBoxItems{
+        background-color: blueviolet;
+        padding: 1rem 2rem;
+        width: 80vw;
+    }
+
+    .headerPopUpBoxItems{
+        background-color: blueviolet;
+        padding: 1rem 1rem;
+        overflow:scroll;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .headerPopUpBoxItem{
+        width: fit-content;
+        height: fit-content;
+        font-size: 0.9rem;
+        margin-inline: 10px;
+        margin-block: 10px;
+    }
+    
+}
+
+
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
