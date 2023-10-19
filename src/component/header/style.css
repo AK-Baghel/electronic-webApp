@@ -39,7 +39,7 @@
     align-items: center;
     gap: 1.8rem;
     transition: all 1s ease;
-    min-height: 90vh;
+    height: fit-content;
 }
 
 .headerItem {
