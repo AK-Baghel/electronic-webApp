@@ -1,10 +1,14 @@
-.aboutContainer{
+.aboutContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    /* background-color: #F6F6F6; */
+
 }
-.aboutBanner{
+
+.aboutBanner {
     background-color: #126ccc;
     width: 100vw;
     text-align: center;
@@ -13,7 +17,8 @@
     padding: 5rem 1rem;
     font-size: 7rem;
 }
-.aboutTrans{
+
+.aboutTrans {
     background-color: #F6F6F6;
     color: #6b6b6b;
     display: flex;
@@ -22,19 +27,22 @@
     align-items: center;
     padding: 4rem 0rem 2rem 0rem;
 }
-.aboutTransText{
+
+.aboutTransText {
     font-size: 2.4rem;
     color: #126ccc;
     border-bottom: 2px solid #126ccc;
     padding-bottom: 1rem;
 }
-.aboutTransDesc{
+
+.aboutTransDesc {
     font-size: 0.9rem;
     text-align: center;
     padding: 3rem 11rem;
     line-height: 1.5rem;
 }
-.aboutQE{
+
+.aboutQE {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,14 +50,16 @@
     width: 100vw;
     padding: 4rem 0rem;
 }
-.aboutQEBox1{
+
+.aboutQEBox1 {
     width: 40vw;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     justify-content: start;
 }
-.aboutQEText{
+
+.aboutQEText {
     /* width:80%; */
     width: fit-content;
 
@@ -59,59 +69,99 @@
     border-bottom: 2px solid #126ccc;
     padding-bottom: 1rem;
 }
-.aboutQEDesc{
+
+.aboutQEDesc {
     color: #7a7a7a;
     line-height: 1.7rem;
 }
-.aboutQEBox2{
+
+.aboutQEBox2 {
     width: 40vw;
 }
-.aboutQEBox2 img{
+
+.aboutQEBox2 img {
     width: 100%;
     padding: 2rem;
 }
 
-@media (max-width:975px){
-    .aboutBanner{
+.aboutECS {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-block: 4rem;
+}
+
+.aboutECSText {
+    font-size: 2.4rem;
+    color: #126ccc;
+    border-bottom: 2px solid #126ccc;
+    padding-bottom: 1rem;
+    width: fit-content;
+    margin: 2rem 0rem;
+}
+
+.aboutECSDesc {
+    color: #7a7a7a;
+    line-height: 1.7rem;
+}
+
+
+@media (max-width:975px) {
+    .aboutBanner {
         font-size: 5rem;
         padding-block: 5rem;
     }
-    .aboutTransDesc{
+
+    .aboutTransDesc {
         padding: 2rem 3rem;
     }
-    .aboutQE{
+
+    .aboutQE {
         flex-direction: column;
         width: 100vw;
     }
+
     .aboutQEBox1 {
         width: 80vw;
     }
+
     .aboutQEBox2 {
         width: 80vw;
     }
 }
-@media (max-width:480px){
-    .aboutBanner{
+
+@media (max-width:480px) {
+    .aboutBanner {
         font-size: 3.5rem;
-        padding-block:4rem;
+        padding-block: 4rem;
     }
-    .aboutTransDesc{
+
+    .aboutTransDesc {
         padding: 2rem 2rem;
     }
 }
-@media (max-width:387px){
+
+@media (max-width:387px) {
     .aboutQEText {
         text-align: center;
         font-size: 1.2rem;
     }
 }
 
-@media (max-width:520px){
+
+@media (max-width:520px) {
     .aboutQEText {
         font-size: 1.8rem;
     }
+
     .aboutQEBox1 {
-        
+
         gap: 1rem;
+    }
+}
+
+@media (max-width:603px) {
+    .aboutECSText {
+        font-size: 1.5rem;
     }
 }
