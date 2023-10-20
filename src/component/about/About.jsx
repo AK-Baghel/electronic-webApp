@@ -1,5 +1,9 @@
 import React from 'react'
 import AboutTile from './aboutTile/AboutTile'
+import {RiShakeHandsLine} from"react-icons/ri"
+import {GiStairsGoal} from"react-icons/gi"
+import {BsGift} from"react-icons/bs"
+
 import "./style.css"
 
 function About() {
@@ -13,11 +17,11 @@ function About() {
         <div className="aboutTransDesc">Openness with our clients. You raise issues and we provide solutions promptly. Transparency means providing context for the decisions we are making. Transparency helps us to eliminate any suspicious or anxieties of our customers might have about the value of what we are offering. By laying about the truth about our product and services.</div>
       </div>
 
-      {/* <div className="aboutTiles">
-        <AboutTile/>
-        <AboutTile/>
-        <AboutTile/>
-      </div> */}
+      <div className="aboutTiles">
+        <AboutTile title={"Commitment"} desc={"Our word and hard work over everything else. Our clients and visions are our guiding beacons."} logo={<RiShakeHandsLine/>}/>
+        <AboutTile title={"Self Improvement"} desc={"Never stop learning, never stop evolving into who we want to be."} logo={<GiStairsGoal/>}/>
+        <AboutTile title={"Over Delivery"} desc={"Deliver more value than our team & clients expect every day over every delivery."} logo={<BsGift/>}/>
+      </div>
 
       <div className="aboutQE">
         <div className="aboutQEBox1">

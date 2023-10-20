@@ -1,8 +1,14 @@
 import React from 'react'
+import "./style.css"
 
-function AboutTile() {
+
+function AboutTile({title,desc,logo}) {
   return (
-    <h1>hello</h1>
+    <div className="aboutTileContainer">
+      <div className="aboutTileBox1">{logo}</div>
+      <div className="aboutTileBox2">{title}</div>
+      <div className="aboutTileBox3">{desc}</div>
+    </div>
   )
 }
 
