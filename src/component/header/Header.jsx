@@ -13,12 +13,19 @@ const Header = () => {
     }
     const navigate=useNavigate();
 
+    const routing=(para)=>{
+        navigate(para);
+        console.log("asdsad");
+        setShow(true)
+        setPopUp(false)
+    }
+
     return (
         <div className="headerContainer">
             <div className="headerItems">
-                <div className="headerLogo" onClick={()=>{navigate("/")}}>LOGO</div>
+                <div className="headerLogo" onClick={()=>{routing("/")}}>LOGO</div>
                 <div className={`headerAllItem ${show ? "headerMobile " : ""}`}>
-                    <div className="headerItem" onClick={()=>{navigate("/")}}>Home</div>
+                    <div className="headerItem" onClick={()=>{routing("/")}}>Home</div>
                     <div className="headerItem headerDrop" onClick={() => { setPopUp(!popUp) }} onMouseOver={() => { setPopUp(true) }} onMouseOut={() => { setPopUp(false) }}>All Products<RiArrowDropDownLine className="headerDropDown" /></div>
                     {
                         popUp &&
@@ -72,9 +79,9 @@ const Header = () => {
                             </ul>
                         </div>
                     }
-                    <div className="headerItem"onClick={()=>{navigate("/about")}} >About Us</div>
-                    <div className="headerItem"onClick={()=>{navigate("/lineCard")}} >Line Card</div>
-                    <div className="headerItem"onClick={()=>{navigate("/contact")}} >Contact Us</div>
+                    <div className="headerItem"onClick={()=>{routing("/about")}} >About Us</div>
+                    <div className="headerItem"onClick={()=>{routing("/lineCard")}} >Line Card</div>
+                    <div className="headerItem"onClick={()=>{routing("/contact")}} >Contact Us</div>
                     <div className="headerItem"><span className="headerCall">CALL NOW:</span> 9876543210</div>
                 </div>
             </div>
