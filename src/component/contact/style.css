@@ -1,0 +1,16 @@
+.contactContainer{
+    margin-bottom: 3rem;
+}
+.contactBox1{
+    background-color: #F6F6F6;
+    width: 100vw;
+}
+.contactBox2{
+    margin-block: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
