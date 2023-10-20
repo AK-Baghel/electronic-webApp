@@ -1,0 +1,117 @@
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutBanner{
+    background-color: #126ccc;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    padding: 5rem 1rem;
+    font-size: 7rem;
+}
+.aboutTrans{
+    background-color: #F6F6F6;
+    color: #6b6b6b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0rem 2rem 0rem;
+}
+.aboutTransText{
+    font-size: 2.4rem;
+    color: #126ccc;
+    border-bottom: 2px solid #126ccc;
+    padding-bottom: 1rem;
+}
+.aboutTransDesc{
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 3rem 11rem;
+    line-height: 1.5rem;
+}
+.aboutQE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    width: 100vw;
+    padding: 4rem 0rem;
+}
+.aboutQEBox1{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: start;
+}
+.aboutQEText{
+    /* width:80%; */
+    width: fit-content;
+
+    font-size: 2.4rem;
+    padding: auto;
+    color: #126ccc;
+    border-bottom: 2px solid #126ccc;
+    padding-bottom: 1rem;
+}
+.aboutQEDesc{
+    color: #7a7a7a;
+    line-height: 1.7rem;
+}
+.aboutQEBox2{
+    width: 40vw;
+}
+.aboutQEBox2 img{
+    width: 100%;
+    padding: 2rem;
+}
+
+@media (max-width:975px){
+    .aboutBanner{
+        font-size: 5rem;
+        padding-block: 5rem;
+    }
+    .aboutTransDesc{
+        padding: 2rem 3rem;
+    }
+    .aboutQE{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .aboutQEBox1 {
+        width: 80vw;
+    }
+    .aboutQEBox2 {
+        width: 80vw;
+    }
+}
+@media (max-width:480px){
+    .aboutBanner{
+        font-size: 3.5rem;
+        padding-block:4rem;
+    }
+    .aboutTransDesc{
+        padding: 2rem 2rem;
+    }
+}
+@media (max-width:387px){
+    .aboutQEText {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:520px){
+    .aboutQEText {
+        font-size: 1.8rem;
+    }
+    .aboutQEBox1 {
+        
+        gap: 1rem;
+    }
+}

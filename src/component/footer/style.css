@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 100vw; /* Limit the width to the viewport width */
+    max-width: 100vw; 
     gap: 3rem;
 }
 
@@ -19,8 +19,6 @@
 .footerBox2{
     display: flex;
     gap: 1rem;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-wrap: wrap;
 
 }
@@ -33,14 +31,12 @@
     
 }
 .footerBox2Section1Text{
-    /* width: 30vw; */
     color:#125CAC ;
     font-size: 2rem;
     font-weight: 600;
 }
 .footerBox2Section1Desc{
     color: #969696;
-    /* width: 30vw; */
     line-height: 1.8rem;
 }
 .footerBox2Section1Social{
@@ -50,7 +46,6 @@
 .footerBox2Section1Social{
     font-size: 1.6rem;
     cursor: pointer;
-    /* width: 100vw; */
     
 }
 .footerSocial{
