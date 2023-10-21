@@ -12,6 +12,9 @@
     padding: 1rem;
     
 }
+.homeValues{
+    background-color: #126ccc;
+}
 
 
 @media (max-width:900px) {

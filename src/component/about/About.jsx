@@ -1,8 +1,9 @@
 import React from 'react'
 import AboutTile from './aboutTile/AboutTile'
-import {RiShakeHandsLine} from"react-icons/ri"
-import {GiStairsGoal} from"react-icons/gi"
-import {BsGift} from"react-icons/bs"
+import { RiShakeHandsLine } from "react-icons/ri"
+import { GiStairsGoal } from "react-icons/gi"
+import { BsGift } from "react-icons/bs"
+import ImgDataBox from './imgDataBox/ImgDataBox'
 
 import "./style.css"
 
@@ -18,19 +19,17 @@ function About() {
       </div>
 
       <div className="aboutTiles">
-        <AboutTile title={"Commitment"} desc={"Our word and hard work over everything else. Our clients and visions are our guiding beacons."} logo={<RiShakeHandsLine/>}/>
-        <AboutTile title={"Self Improvement"} desc={"Never stop learning, never stop evolving into who we want to be."} logo={<GiStairsGoal/>}/>
-        <AboutTile title={"Over Delivery"} desc={"Deliver more value than our team & clients expect every day over every delivery."} logo={<BsGift/>}/>
+        <AboutTile title={"Commitment"} desc={"Our word and hard work over everything else. Our clients and visions are our guiding beacons."} logo={<RiShakeHandsLine />} />
+        <AboutTile title={"Self Improvement"} desc={"Never stop learning, never stop evolving into who we want to be."} logo={<GiStairsGoal />} />
+        <AboutTile title={"Over Delivery"} desc={"Deliver more value than our team & clients expect every day over every delivery."} logo={<BsGift />} />
       </div>
 
-      <div className="aboutQE">
-        <div className="aboutQEBox1">
-          <div className="aboutQEText">Quality and Experience</div>
-      <div className="aboutTransLine"></div>
-          <div className="aboutQEDesc">Glorious Electronics have always been Customer driven and Quality focused. We dispense 100% original component. We ensure the quality of the product be up to the mark and exemplary. Quality comprise of performance, aesthetics, special features, conformance, reliability, durability, perceived quality thus Glorious Electronics offers all. Our cost effective solutions keeps our customer frontward in a tough and competitive market. Quality is a crucial parameter which differentiates Glorious Electronics from our competitors. We offer products that have a good value where the benefits and usage are worth.</div>
-        </div>
-        <div className="aboutQEBox2"><img src="https://researchoutreach.org/wp-content/uploads/2021/06/shutterstock_1490111117.jpg" alt="" /></div>
-      </div>
+      <ImgDataBox
+        text={"Quality and Experience"}
+        desc={"Glorious Electronics have always been Customer driven and Quality focused. We dispense 100% original component. We ensure the quality of the product be up to the mark and exemplary. Quality comprise of performance, aesthetics, special features, conformance, reliability, durability, perceived quality thus Glorious Electronics offers all. Our cost effective solutions keeps our customer frontward in a tough and competitive market. Quality is a crucial parameter which differentiates Glorious Electronics from our competitors. We offer products that have a good value where the benefits and usage are worth."}
+        img={"https://researchoutreach.org/wp-content/uploads/2021/06/shutterstock_1490111117.jpg"}
+        reverse={false}
+      />
 
       <div className="aboutECS">
         <div className="aboutECSText">Excellent customer service</div>

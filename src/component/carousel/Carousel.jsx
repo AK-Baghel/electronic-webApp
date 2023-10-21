@@ -35,9 +35,9 @@ function Carousel() {
         >
 
             {
-                data.map((item) => {
+                data.map((item,id) => {
                     return (
-                        <SwiperSlide><img className='new' src={item} alt="" /></SwiperSlide>
+                        <SwiperSlide key={id}><img className='new' src={item} alt="" /></SwiperSlide>
                     )
                 })
             }
