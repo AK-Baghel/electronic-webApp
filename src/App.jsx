@@ -5,6 +5,8 @@ import LineCard from "./component/lineCard/LineCard"
 import Footer from "./component/footer/Footer"
 import Contact from "./component/contact/Contact"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import '@coreui/coreui/dist/css/coreui.min.css'
+
 function App() {
   return (
     <>
