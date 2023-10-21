@@ -1,4 +1,11 @@
 .new{
-    width: 100vw;
-    height: 90vh;
+    max-width: 100vw;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: white;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: white;
 }
