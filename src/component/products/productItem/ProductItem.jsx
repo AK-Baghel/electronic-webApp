@@ -11,7 +11,7 @@ function ProductItem() {
 
     return (
         <div className="productItemContainer" onClick={product}>
-            <img className='productItemText' src="https://i0.wp.com/www.gloriouselectronics.com/wp-content/uploads/2022/02/IGBT.jpg?w=500&ssl=1" alt="" />
+            <img className='productItemImg' src="https://i0.wp.com/www.gloriouselectronics.com/wp-content/uploads/2022/02/IGBT.jpg?w=500&ssl=1" alt="" />
             <div className="productItemText">IGBT</div>
         </div>
     )

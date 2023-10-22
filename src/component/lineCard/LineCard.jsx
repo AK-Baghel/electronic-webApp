@@ -1,8 +1,21 @@
 import React from 'react'
-
+import LineCardItems from './lineCardItems/LineCardItems'
 function LineCard() {
   return (
-    <div>LineCard</div>
+    <>
+      <div className="aboutBanner">Line Card</div>
+      <div className="productsItems" style={{marginBlock:"3rem"}}>
+
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+        <LineCardItems />
+      </div>
+    </>
   )
 }
 

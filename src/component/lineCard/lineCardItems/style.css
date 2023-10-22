@@ -1,0 +1,32 @@
+.lineCardItemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 2rem; */
+    margin-block:3rem ;
+    /* padding: 10px; */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.lineCardItemsImg{
+    transition: all 0.3s ease;
+    width: 17rem;
+}
+.lineCardItemsImg:hover{
+    transform: scale(1.1);
+}
+@media (max-width:850px){
+    .lineCardItemsContainer {
+        margin-block:1rem ;
+    }
+}
+@media (max-width:560px){
+    .lineCardItemsImg{
+        width: 11rem;
+    }
+    .lineCardItemsContainer {
+        margin-block:0.5rem ;
+    }
+}
