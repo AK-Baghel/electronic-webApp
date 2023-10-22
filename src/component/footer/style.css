@@ -50,9 +50,10 @@
 }
 .footerSocial{
     text-align: center;
-    padding: 4px 2px 0px 2px;
+    /* padding: 2px 2px 0px 2px; */
     width: 2rem;
     transition: all 0.3s ease;
+    margin: -6px 2px 0px 2px;
     
 }
 .footerSocial:hover{

@@ -4,6 +4,7 @@ import About from "./component/about/About"
 import LineCard from "./component/lineCard/LineCard"
 import Footer from "./component/footer/Footer"
 import Contact from "./component/contact/Contact"
+import ProductPage from "./component/products/productPage/ProductPage"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import '@coreui/coreui/dist/css/coreui.min.css'
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/lineCard" element={<LineCard />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:name" element={<ProductPage />} />
       </Routes>
       <Footer />
     </>

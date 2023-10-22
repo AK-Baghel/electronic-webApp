@@ -35,10 +35,10 @@ function Footer() {
         <div className="footerBox2Items2">
           <div className="footerBox2Section2Text">Quick Link</div>
           <div className="footerBox2Section2Items">
-            <div className="footerBox2Section2Item" onClick={()=>{navigate('/')}}>Home</div>
-            <div className="footerBox2Section2Item" onClick={()=>{navigate('/about')}}>About US</div>
-            <div className="footerBox2Section2Item" onClick={()=>{navigate('/lineCard')}}>Line Card</div>
-            <div className="footerBox2Section2Item" onClick={()=>{navigate('/contact')}}>Contact Us</div>
+            <div className="footerBox2Section2Item" onClick={()=>{navigate('/'); window.scroll(0,0);}}>Home</div>
+            <div className="footerBox2Section2Item" onClick={()=>{navigate('/about'); window.scroll(0,0);}}>About US</div>
+            <div className="footerBox2Section2Item" onClick={()=>{navigate('/lineCard'); window.scroll(0,0);}}>Line Card</div>
+            <div className="footerBox2Section2Item" onClick={()=>{navigate('/contact'); window.scroll(0,0);}}>Contact Us</div>
           </div>
         </div>
 

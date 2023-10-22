@@ -51,31 +51,13 @@ const Header = () => {
                                 <li className="headerPopUpBoxItem">IGBT</li>
                                 <li className="headerPopUpBoxItem">RELAY CARD</li>
                                 <li className="headerPopUpBoxItem">DIODE</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES TDK</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES COSMO</li>
-                                <li className="headerPopUpBoxItem">IGBT</li>
-                                <li className="headerPopUpBoxItem">RELAY CARD</li>
                                 <li className="headerPopUpBoxItem">DIODE</li>
                                 <li className="headerPopUpBoxItem">FERRITE CORES TDK</li>
                                 <li className="headerPopUpBoxItem">FERRITE CORES COSMO</li>
                                 <li className="headerPopUpBoxItem">IGBT</li>
                                 <li className="headerPopUpBoxItem">RELAY CARD</li>
                                 <li className="headerPopUpBoxItem">DIODE</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES TDK</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES COSMO</li>
-                                <li className="headerPopUpBoxItem">IGBT</li>
-                                <li className="headerPopUpBoxItem">RELAY CARD</li>
-                                <li className="headerPopUpBoxItem">DIODE</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES TDK</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES COSMO</li>
-                                <li className="headerPopUpBoxItem">IGBT</li>
-                                <li className="headerPopUpBoxItem">RELAY CARD</li>
-                                <li className="headerPopUpBoxItem">DIODE</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES TDK</li>
-                                <li className="headerPopUpBoxItem">FERRITE CORES COSMO</li>
-                                <li className="headerPopUpBoxItem">IGBT</li>
-                                <li className="headerPopUpBoxItem">RELAY CARD</li>
-                                <li className="headerPopUpBoxItem">DIODE</li>
+                                
                             </ul>
                         </div>
                     }

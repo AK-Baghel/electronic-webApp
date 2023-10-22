@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from '../carousel/Carousel'
 import MarqueeComp from '../marquee/MarqueeComp'
 import ImgDataBox from '../about/imgDataBox/ImgDataBox'
+import Products from '../products/Products'
 import "./style.css"
 
 function Home() {
@@ -17,6 +18,10 @@ function Home() {
         </div>
         <MarqueeComp />
       </div>
+
+
+    <Products/>
+
 
       <ImgDataBox
         text={"Our Vision"}
