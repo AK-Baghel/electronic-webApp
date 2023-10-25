@@ -4,8 +4,10 @@ import { FaBars } from "react-icons/fa6"
 import { RiArrowDropDownLine } from "react-icons/ri"
 import { IoClose } from "react-icons/io5"
 import {useNavigate} from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 const Header = () => {
+    const location=useLocation();
     const [show, setShow] = useState(true);
     const [popUp, setPopUp] = useState(false);
     const toggleBar = () => {
@@ -25,7 +27,7 @@ const Header = () => {
             <div className="headerItems">
                 <div className="headerLogo" onClick={()=>{routing("/")}}>LOGO</div>
                 <div className={`headerAllItem ${show ? "headerMobile " : ""}`}>
-                    <div className="headerItem" onClick={()=>{routing("/")}}>Home</div>
+                    <div className={`headerItem ${location.pathname==="/" ? "active" : ""}`} onClick={()=>{routing("/")}}>Home</div>
                     <div className="headerItem headerDrop" onClick={() => { setPopUp(!popUp) }} onMouseOver={() => { setPopUp(true) }} onMouseOut={() => { setPopUp(false) }}>All Products<RiArrowDropDownLine className="headerDropDown" /></div>
                     {
                         popUp &&
@@ -61,9 +63,9 @@ const Header = () => {
                             </ul>
                         </div>
                     }
-                    <div className="headerItem"onClick={()=>{routing("/about")}} >About Us</div>
-                    <div className="headerItem"onClick={()=>{routing("/lineCard")}} >Line Card</div>
-                    <div className="headerItem"onClick={()=>{routing("/contact")}} >Contact Us</div>
+                    <div className={`headerItem ${location.pathname==="/about" ? "active" : ""}`} onClick={()=>{routing("/about")}} >About Us</div>
+                    <div className={`headerItem ${location.pathname==="/lineCard" ? "active" : ""}`} onClick={()=>{routing("/lineCard")}} >Line Card</div>
+                    <div className={`headerItem ${location.pathname==="/contact" ? "active" : ""}`} onClick={()=>{routing("/contact")}} >Contact Us</div>
                     <div className="headerItem"><span className="headerCall">CALL NOW:</span> 9876543210</div>
                 </div>
             </div>

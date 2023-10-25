@@ -1,0 +1,132 @@
+.productPContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+.productPBox{
+    padding: 5rem;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 90vw;
+    gap: 2rem;
+
+}
+.productPBox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productPImg{
+    width: 20rem;
+}
+.productPTitle{
+    font-size: 6rem;
+    font-weight: 800;
+    color: #0982CB;
+}
+.productPName{
+    text-transform: uppercase;
+}
+.productPBox2{
+    text-align: right;
+}
+.productPBox3{
+    display: flex;
+    flex-direction: column;
+}
+.productPRow{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0rem;
+}
+.productPRowSection{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 16vw;
+    font-weight: 700;
+    background-color: #FBFBFB;
+}
+.productPRowSectionData{
+    width: 16vw;
+    border: 1px solid gray;
+    border-top: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: gray;
+}
+.productPClick{
+    color: #0982CB;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.productPClick:hover{
+    color: rgb(46, 46, 46);
+}
+.productPBoxSocials{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.productPBoxSocialsText{
+    width: fit-content;
+    font-weight: 800;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+@media (max-width:985px){
+    .productPImg{
+        width: 10rem;
+    }
+    .productPTitle{
+        font-size: 3rem;
+    }
+}
+@media (max-width:795px){
+    .productPImg{
+        width: 8rem;
+    }
+    .productPTitle{
+        font-size: 2rem;
+    }
+    .productPRowSectionData , .productPRowSection{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width:667px){
+    .productPRowSectionData , .productPRowSection{
+        font-size: 0.6rem;
+    }
+    .productPBox{
+        padding: 2rem;
+    }
+    .productPBox2{
+        text-align: center;
+    }
+}
+@media (max-width:510px){
+    .productPRowSectionData , .productPRowSection{
+        font-size: 0.6rem;
+    }
+    .productPBox{        
+        padding: 2rem;
+    }
+}
+@media (max-width:500px){
+    .productPRowSectionData , .productPRowSection{
+        font-size: 0.6rem;
+    }
+    .productPBox{        
+        padding: 1rem;
+    }
+}
+@media (max-width:450px){
+    .productPRowSectionData , .productPRowSection{
+        font-size: 0.5rem;
+    }
+    .productPBox{        
+        padding: 1rem;
+    }
+}

@@ -10,11 +10,11 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function Carousel() {
 
     const data = [
+        "https://i0.wp.com/www.gloriouselectronics.com/wp-content/uploads/2021/11/1_3.jpg?fit=1920%2C780&ssl=1",
         "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
+        "https://i0.wp.com/www.gloriouselectronics.com/wp-content/uploads/2021/11/3_1.jpg?fit=1920%2C780&ssl=1",
         "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg",
-        "https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+        "https://i0.wp.com/www.gloriouselectronics.com/wp-content/uploads/2021/11/2_2.jpg?fit=1920%2C780&ssl=1"
     ];
     
     return (

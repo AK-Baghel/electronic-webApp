@@ -105,6 +105,9 @@
     color: #125CAC;
     
 }
+.footerBox2Section2Item:hover{
+    text-decoration: underline;
+}
 .footerBox2Items3 {
     padding: 1rem;
     display: flex;
