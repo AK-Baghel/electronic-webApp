@@ -66,6 +66,7 @@ const Header = () => {
                     <div className={`headerItem ${location.pathname==="/about" ? "active" : ""}`} onClick={()=>{routing("/about")}} >About Us</div>
                     <div className={`headerItem ${location.pathname==="/lineCard" ? "active" : ""}`} onClick={()=>{routing("/lineCard")}} >Line Card</div>
                     <div className={`headerItem ${location.pathname==="/contact" ? "active" : ""}`} onClick={()=>{routing("/contact")}} >Contact Us</div>
+                    <div className={`headerItem ${location.pathname==="/contact" ? "active" : ""}`} onClick={()=>{routing("/dashboard")}} >Dashboard</div>
                     <div className="headerItem"><span className="headerCall">CALL NOW:</span> 9876543210</div>
                 </div>
             </div>
